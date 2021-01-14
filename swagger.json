@@ -104,7 +104,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -188,7 +188,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -265,7 +265,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -349,7 +349,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -433,7 +433,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -510,7 +510,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -587,7 +587,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1033,7 +1033,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1213,7 +1213,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1272,7 +1272,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1321,7 +1321,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1371,7 +1371,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1421,7 +1421,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1477,7 +1477,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1526,7 +1526,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1570,7 +1570,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1621,7 +1621,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1698,7 +1698,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1798,7 +1798,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -1855,7 +1855,7 @@
             "security":[
                {
                   "JwtToken":[
-
+                     
                   ]
                }
             ],
@@ -3794,7 +3794,7 @@
                   },
                   "value":{
                      "description":"The value of the static data (the field type depends on the static data type, not for type BLOCK)",
-                     "$ref":"#/definitions/DataDto"
+                     "$ref":"#/definitions/DataListItemDto"
                   }
                },
                "title":"DataListDto"
@@ -5758,6 +5758,15 @@
                         "MISSINGABLE",
                         "OPTIONAL"
                      ]
+                  },
+                  "items":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/ListItemDto"
+                     }
+                  },
+                  "link":{
+                     "$ref":"#/definitions/Link"
                   },
                   "name":{
                      "type":"string"
