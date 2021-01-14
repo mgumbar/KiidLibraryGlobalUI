@@ -6736,10 +6736,6 @@
         "entityId": {
           "type": "string",
           "description": "client ID e.g. IHU"
-        },
-        "entityName": {
-          "type": "string",
-          "description": "the entity name e.g. i-Hub"
         }
       }
     },
