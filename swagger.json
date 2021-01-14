@@ -104,7 +104,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -188,7 +188,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -265,7 +265,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -349,7 +349,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -433,7 +433,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -510,7 +510,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -587,7 +587,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1033,7 +1033,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1213,7 +1213,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1272,7 +1272,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1321,7 +1321,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1371,7 +1371,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1421,7 +1421,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1477,7 +1477,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1526,7 +1526,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1570,7 +1570,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1621,7 +1621,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1698,7 +1698,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1798,7 +1798,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -1855,7 +1855,7 @@
             "security":[
                {
                   "JwtToken":[
-                     
+
                   ]
                }
             ],
@@ -5796,6 +5796,1175 @@
          "allOf":[
             {
                "$ref":"#/definitions/Field"
+            },
+            {
+               "type":"object",
+               "properties":{
+                  "canBeAmendedInPendingChange":{
+                     "type":"boolean"
+                  },
+                  "comment":{
+                     "$ref":"#/definitions/DocumentComment"
+                  },
+                  "defaultValue":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/DefaultValueDto"
+                     }
+                  },
+                  "displayIf":{
+                     "type":"array",
+                     "items":{
+                        "type":"array",
+                        "items":{
+                           "$ref":"#/definitions/ConditionDto"
+                        }
+                     }
+                  },
+                  "haveOne":{
+                     "type":"string"
+                  },
+                  "haveOneOid":{
+                     "type":"string"
+                  },
+                  "id":{
+                     "type":"string"
+                  },
+                  "importance":{
+                     "type":"string",
+                     "enum":[
+                        "MANDATORY",
+                        "MISSINGABLE",
+                        "OPTIONAL"
+                     ]
+                  },
+                  "integer":{
+                     "type":"boolean"
+                  },
+                  "max":{
+                     "type":"number",
+                     "format":"double"
+                  },
+                  "min":{
+                     "type":"number",
+                     "format":"double"
+                  },
+                  "name":{
+                     "type":"string"
+                  },
+                  "nullable":{
+                     "type":"boolean"
+                  },
+                  "translationKey":{
+                     "type":"string"
+                  },
+                  "uniqueness":{
+                     "type":"boolean"
+                  },
+                  "unsigned":{
+                     "type":"boolean"
+                  },
+                  "validIf":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/ValidationDto"
+                     }
+                  },
+                  "value":{
+                     "type":"number",
+                     "format":"double"
+                  }
+               },
+               "title":"FieldNumberDto"
+            }
+         ]
+      },
+      "FieldSelectionDto":{
+         "title":"FieldSelectionDto",
+         "allOf":[
+            {
+               "$ref":"#/definitions/Field"
+            },
+            {
+               "type":"object",
+               "properties":{
+                  "canBeAmendedInPendingChange":{
+                     "type":"boolean"
+                  },
+                  "comment":{
+                     "$ref":"#/definitions/DocumentComment"
+                  },
+                  "defaultValue":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/DefaultValueDto"
+                     }
+                  },
+                  "displayIf":{
+                     "type":"array",
+                     "items":{
+                        "type":"array",
+                        "items":{
+                           "$ref":"#/definitions/ConditionDto"
+                        }
+                     }
+                  },
+                  "fields":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/SelectionItemDto"
+                     }
+                  },
+                  "haveOne":{
+                     "type":"string"
+                  },
+                  "haveOneOid":{
+                     "type":"string"
+                  },
+                  "id":{
+                     "type":"string"
+                  },
+                  "importance":{
+                     "type":"string",
+                     "enum":[
+                        "MANDATORY",
+                        "MISSINGABLE",
+                        "OPTIONAL"
+                     ]
+                  },
+                  "name":{
+                     "type":"string"
+                  },
+                  "translationKey":{
+                     "type":"string"
+                  },
+                  "uniqueness":{
+                     "type":"boolean"
+                  },
+                  "validIf":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/ValidationDto"
+                     }
+                  },
+                  "value":{
+                     "type":"object"
+                  }
+               },
+               "title":"FieldSelectionDto"
+            }
+         ]
+      },
+      "FieldStringDto":{
+         "title":"FieldStringDto",
+         "allOf":[
+            {
+               "$ref":"#/definitions/Field"
+            },
+            {
+               "type":"object",
+               "properties":{
+                  "canBeAmendedInPendingChange":{
+                     "type":"boolean"
+                  },
+                  "comment":{
+                     "$ref":"#/definitions/DocumentComment"
+                  },
+                  "defaultValue":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/DefaultValueDto"
+                     }
+                  },
+                  "displayIf":{
+                     "type":"array",
+                     "items":{
+                        "type":"array",
+                        "items":{
+                           "$ref":"#/definitions/ConditionDto"
+                        }
+                     }
+                  },
+                  "haveOne":{
+                     "type":"string"
+                  },
+                  "haveOneOid":{
+                     "type":"string"
+                  },
+                  "id":{
+                     "type":"string"
+                  },
+                  "importance":{
+                     "type":"string",
+                     "enum":[
+                        "MANDATORY",
+                        "MISSINGABLE",
+                        "OPTIONAL"
+                     ]
+                  },
+                  "maxLength":{
+                     "type":"integer",
+                     "format":"int32"
+                  },
+                  "minLength":{
+                     "type":"integer",
+                     "format":"int32"
+                  },
+                  "name":{
+                     "type":"string"
+                  },
+                  "translationKey":{
+                     "type":"string"
+                  },
+                  "uniqueness":{
+                     "type":"boolean"
+                  },
+                  "validIf":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/ValidationDto"
+                     }
+                  },
+                  "value":{
+                     "type":"string"
+                  }
+               },
+               "title":"FieldStringDto"
+            }
+         ]
+      },
+      "FieldTotalPercentageDto":{
+         "title":"FieldTotalPercentageDto",
+         "allOf":[
+            {
+               "$ref":"#/definitions/Field"
+            },
+            {
+               "type":"object",
+               "properties":{
+                  "canBeAmendedInPendingChange":{
+                     "type":"boolean"
+                  },
+                  "comment":{
+                     "$ref":"#/definitions/DocumentComment"
+                  },
+                  "defaultValue":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/DefaultValueDto"
+                     }
+                  },
+                  "displayIf":{
+                     "type":"array",
+                     "items":{
+                        "type":"array",
+                        "items":{
+                           "$ref":"#/definitions/ConditionDto"
+                        }
+                     }
+                  },
+                  "fields":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/TotalPercentageItemDto"
+                     }
+                  },
+                  "haveOne":{
+                     "type":"string"
+                  },
+                  "haveOneOid":{
+                     "type":"string"
+                  },
+                  "id":{
+                     "type":"string"
+                  },
+                  "importance":{
+                     "type":"string",
+                     "enum":[
+                        "MANDATORY",
+                        "MISSINGABLE",
+                        "OPTIONAL"
+                     ]
+                  },
+                  "name":{
+                     "type":"string"
+                  },
+                  "translationKey":{
+                     "type":"string"
+                  },
+                  "uniqueness":{
+                     "type":"boolean"
+                  },
+                  "validIf":{
+                     "type":"array",
+                     "items":{
+                        "$ref":"#/definitions/ValidationDto"
+                     }
+                  },
+                  "value":{
+                     "type":"object"
+                  }
+               },
+               "title":"FieldTotalPercentageDto"
+            }
+         ]
+      },
+      "GetContractResponse":{
+         "type":"object",
+         "properties":{
+            "audit":{
+               "$ref":"#/definitions/AuditDto"
+            },
+            "canCreateStakeholders":{
+               "type":"boolean"
+            },
+            "canUpdateDocuments":{
+               "type":"boolean"
+            },
+            "canUpdateStaticData":{
+               "type":"boolean"
+            },
+            "display":{
+               "$ref":"#/definitions/DisplayDto"
+            },
+            "documentComments":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/DocumentComment"
+               }
+            },
+            "dueDiligence":{
+               "$ref":"#/definitions/DueDiligenceDto"
+            },
+            "entity":{
+               "$ref":"#/definitions/ContractEntitySearchResponse"
+            },
+            "identityType":{
+               "type":"string",
+               "enum":[
+                  "PHYSICAL_PERSON",
+                  "LEGAL_PERSON",
+                  "CONTRACT"
+               ]
+            },
+            "ihubId":{
+               "type":"string"
+            },
+            "lastReviewDate":{
+               "type":"string",
+               "format":"date"
+            },
+            "modifiedByType":{
+               "type":"string"
+            },
+            "nextDueDate":{
+               "type":"string",
+               "format":"date"
+            },
+            "pendingComments":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PendingComment"
+               }
+            },
+            "stakeholdersCount":{
+               "type":"integer",
+               "format":"int64"
+            },
+            "staticData":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/DataDto"
+               }
+            },
+            "validationStatus":{
+               "type":"string",
+               "enum":[
+                  "PENDING_CREATION",
+                  "PENDING_UPDATE",
+                  "PENDING_MIGRATION",
+                  "VALIDATED",
+                  "VALIDATED_2",
+                  "REJECTED",
+                  "DELETED",
+                  "NA"
+               ]
+            }
+         },
+         "title":"GetContractResponse"
+      },
+      "GetIdentityIdsResponse":{
+         "type":"object",
+         "properties":{
+            "ihubId":{
+               "type":"string",
+               "example":"PLU710225DEOD00756843",
+               "description":"i-Hub ID"
+            }
+         },
+         "title":"GetIdentityIdsResponse"
+      },
+      "GetIdentityRiskResponse":{
+         "type":"object",
+         "properties":{
+            "severity":{
+               "type":"string",
+               "example":"LOW",
+               "description":"The ID risk severity",
+               "enum":[
+                  "NOT_DEFINED",
+                  "LOW",
+                  "MEDIUM",
+                  "HIGH"
+               ]
+            }
+         },
+         "title":"GetIdentityRiskResponse"
+      },
+      "GetIdentityStaticDataResponse":{
+         "type":"object",
+         "properties":{
+            "staticData":{
+               "type":"array",
+               "description":"The list of static data",
+               "items":{
+                  "$ref":"#/definitions/StaticDataDto"
+               }
+            }
+         },
+         "title":"GetIdentityStaticDataResponse"
+      },
+      "GetScreeningStatusResponse":{
+         "type":"object",
+         "properties":{
+            "lastScreeningDate":{
+               "type":"string",
+               "format":"date-time",
+               "description":"The last date when the screening was updated."
+            },
+            "screeningDetectionPage":{
+               "$ref":"#/definitions/PageOfClientScreeningDetectionDto"
+            }
+         },
+         "title":"GetScreeningStatusResponse"
+      },
+      "IMissingDocumentDto":{
+         "type":"object",
+         "title":"IMissingDocumentDto"
+      },
+      "ListDocumentsResponse":{
+         "type":"object",
+         "properties":{
+            "documents":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/DocumentVersionsDto"
+               }
+            }
+         },
+         "title":"ListDocumentsResponse"
+      },
+      "ListErrorMessage":{
+         "type":"object",
+         "properties":{
+            "code":{
+               "type":"string",
+               "example":"A0001",
+               "description":"The error code"
+            },
+            "description":{
+               "type":"string",
+               "example":"The actual connected user is not authorized to see this resource.",
+               "description":"The error description text"
+            },
+            "errors":{
+               "type":"object",
+               "additionalProperties":{
+                  "$ref":"#/definitions/ValidationError"
+               }
+            }
+         },
+         "title":"ListErrorMessage"
+      },
+      "ListMissingDocumentsResponse":{
+         "type":"object",
+         "properties":{
+            "missingDocuments":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/IMissingDocumentDto"
+               }
+            }
+         },
+         "title":"ListMissingDocumentsResponse"
+      },
+      "MessageDto":{
+         "type":"object",
+         "properties":{
+            "attributes":{
+               "type":"object"
+            },
+            "code":{
+               "type":"string",
+               "enum":[
+                  "NOTIFY_ASSOCIATION_CODE",
+                  "NOTIFY_DOC_REQUEST",
+                  "NOTIFY_DOC_REQUEST_REMINDER_SECOND",
+                  "NOTIFY_DOC_REQUEST_REMINDER_THIRD",
+                  "NOTIFY_NEW_RELATION",
+                  "NOTIFY_NEW_DOCUMENT",
+                  "NOTIFY_NEW_RELATED_PARTY",
+                  "NOTIFY_DATA_UPDATED",
+                  "NOTIFY_DOCUMENT_UPDATED",
+                  "NOTIFY_RELATED_PARTY_UPDATED_OR_DELETED",
+                  "NOTIFY_DATA_UPDATE_REJECTED",
+                  "NOTIFY_DOCUMENT_UPDATE_REJECTED",
+                  "NOTIFY_RELATED_PARTY_UPDATE_REJECTED",
+                  "NOTIFY_END_RELATIONSHIP",
+                  "NOTIFY_CLIENT_RISK_SCORING_UPDATED",
+                  "NOTIFY_CLIENT_RISK_SCORING_HIGH",
+                  "NOTIFY_IDENTITY_STATUS_CHANGED",
+                  "NOTIFY_ENDCLIENT_TERMINATION_REQUEST",
+                  "NOTIFY_IHUB_RISK_SCORING_UPDATED",
+                  "NOTIFY_IHUB_RISK_SCORING_HIGH",
+                  "NOTIFY_END_RELATIONSHIP_AFTER_TERMINATION_REQUEST",
+                  "NOTIFY_DOC_CHASING_NP",
+                  "NOTIFY_DOC_CHASING_NP_SECOND",
+                  "NOTIFY_DOC_CHASING_LE",
+                  "NOTIFY_DOC_CHASING_LE_SECOND",
+                  "NOTIFY_DOC_CHASING_LE_THIRD",
+                  "NOTIFY_DOC_CHASING_RELATED_PARTY",
+                  "NOTIFY_DOC_CHASING_RELATED_PARTY_SECOND",
+                  "NOTIFY_DOC_CHASING_RELATED_PARTY_THIRD",
+                  "NOTIFY_CLIENT_DOC_REQUEST",
+                  "NOTIFY_CLIENT_DOC_REQUEST_2",
+                  "NOTIFY_CLIENT_DOC_REQUEST_3",
+                  "NOTIFY_CLIENT_DOC_CHASING_NP",
+                  "NOTIFY_CLIENT_DOC_CHASING_NP_SECOND",
+                  "NOTIFY_CLIENT_DOC_CHASING_LE",
+                  "NOTIFY_CLIENT_DOC_CHASING_LE_SECOND",
+                  "NOTIFY_CLIENT_DOC_CHASING_LE_THIRD",
+                  "NOTIFY_CLIENT_DOC_CHASING_RELATED_PARTY",
+                  "NOTIFY_CLIENT_DOC_CHASING_RELATED_PARTY_SECOND",
+                  "NOTIFY_CLIENT_DOC_CHASING_RELATED_PARTY_THIRD",
+                  "NOTIFY_CLIENT_DATA_UPDATE_VERIFIED",
+                  "NOTIFY_CLIENT_DATA_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_DOCUMENT_CREATION_VERIFIED",
+                  "NOTIFY_CLIENT_DOCUMENT_CREATION_REJECTED",
+                  "NOTIFY_CLIENT_DOCUMENT_UPDATE_VERIFIED",
+                  "NOTIFY_CLIENT_DOCUMENT_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_CONTRACT_DOCUMENT_CREATION_VERIFIED",
+                  "NOTIFY_CLIENT_CONTRACT_DOCUMENT_CREATION_REJECTED",
+                  "NOTIFY_CLIENT_CONTRACT_DOCUMENT_UPDATE_VERIFIED",
+                  "NOTIFY_CLIENT_CONTRACT_DOCUMENT_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_RELATED_PARTY_CREATION_VERIFIED",
+                  "NOTIFY_CLIENT_RELATED_PARTY_CREATION_REJECTED",
+                  "NOTIFY_CLIENT_RELATED_PARTY_UPDATE_VERIFIED",
+                  "NOTIFY_CLIENT_RELATED_PARTY_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_RELATED_PARTY_DELETE_VERIFIED",
+                  "NOTIFY_CLIENT_RELATED_PARTY_DELETE_REJECTED",
+                  "NOTIFY_CLIENT_CONTRACT_RELATED_PARTY_CREATION_VERIFIED",
+                  "NOTIFY_CLIENT_CONTRACT_RELATED_PARTY_CREATION_REJECTED",
+                  "NOTIFY_CLIENT_CONTRACT_RELATED_PARTY_UPDATE_VERIFIED",
+                  "NOTIFY_CLIENT_CONTRACT_RELATED_PARTY_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_CONTRACT_RELATED_PARTY_DELETE_VERIFIED",
+                  "NOTIFY_CLIENT_CONTRACT_RELATED_PARTY_DELETE_REJECTED",
+                  "NOTIFY_CLIENT_CONTACT_UPDATED",
+                  "NOTIFY_CLIENT_CONTRACT_CONTACT_UPDATED",
+                  "NOTIFY_SCREENING_STATUS_UPDATED",
+                  "NOTIFY_CLIENT_LG_DOC_REQUEST",
+                  "NOTIFY_CLIENT_AU_DOC_REQUEST",
+                  "NOTIFY_CLIENT_LG_DOC_REQUEST_2",
+                  "NOTIFY_CLIENT_AU_DOC_REQUEST_2",
+                  "NOTIFY_CLIENT_LG_DOC_REQUEST_3",
+                  "NOTIFY_CLIENT_AU_DOC_REQUEST_3",
+                  "NOTIFY_CLIENT_LG_DATA_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_AU_DATA_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_LG_DOCUMENT_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_AU_DOCUMENT_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_LG_RELATED_PARTY_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_AU_RELATED_PARTY_UPDATE_REJECTED",
+                  "NOTIFY_CLIENT_DOCUMENT_INVALIDATION",
+                  "NOTIFY_ENDCLIENT_DOCUMENT_INVALIDATION",
+                  "NOTIFY_CLIENT_API_CONTRACT_CONTACT_UPDATED",
+                  "NOTIFY_CLIENT_DUE_DILIGENCE_CREATED",
+                  "NOTIFY_CLIENT_DUE_DILIGENCE_FINISHED",
+                  "NOTIFY_CLIENT_DATA_AMENDED"
+               ]
+            },
+            "messageDate":{
+               "type":"string",
+               "format":"date-time"
+            },
+            "read":{
+               "type":"boolean"
+            },
+            "source":{
+               "type":"string",
+               "enum":[
+                  "ENDCLIENT",
+                  "CLIENT",
+                  "IHUB",
+                  "SYSTEM"
+               ]
+            },
+            "type":{
+               "type":"string",
+               "enum":[
+                  "ALERT",
+                  "NOTIFICATION"
+               ]
+            },
+            "uuid":{
+               "type":"string",
+               "format":"uuid"
+            }
+         },
+         "title":"MessageDto"
+      },
+      "Operator":{
+         "type":"object",
+         "title":"Operator"
+      },
+      "PageOfClientAuditTrailDto":{
+         "type":"object",
+         "properties":{
+            "content":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/ClientAuditTrailDto"
+               }
+            },
+            "first":{
+               "type":"boolean"
+            },
+            "last":{
+               "type":"boolean"
+            },
+            "number":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "numberOfElements":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "pageable":{
+               "$ref":"#/definitions/Pageable"
+            },
+            "size":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "sort":{
+               "$ref":"#/definitions/Sort"
+            },
+            "totalElements":{
+               "type":"integer",
+               "format":"int64"
+            },
+            "totalPages":{
+               "type":"integer",
+               "format":"int32"
+            }
+         },
+         "title":"PageOfClientAuditTrailDto"
+      },
+      "PageOfClientScreeningDetectionDto":{
+         "type":"object",
+         "properties":{
+            "content":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/ClientScreeningDetectionDto"
+               }
+            },
+            "first":{
+               "type":"boolean"
+            },
+            "last":{
+               "type":"boolean"
+            },
+            "number":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "numberOfElements":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "pageable":{
+               "$ref":"#/definitions/Pageable"
+            },
+            "size":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "sort":{
+               "$ref":"#/definitions/Sort"
+            },
+            "totalElements":{
+               "type":"integer",
+               "format":"int64"
+            },
+            "totalPages":{
+               "type":"integer",
+               "format":"int32"
+            }
+         },
+         "title":"PageOfClientScreeningDetectionDto"
+      },
+      "PageOfGetIdentityIdsResponse":{
+         "type":"object",
+         "properties":{
+            "content":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/GetIdentityIdsResponse"
+               }
+            },
+            "first":{
+               "type":"boolean"
+            },
+            "last":{
+               "type":"boolean"
+            },
+            "number":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "numberOfElements":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "pageable":{
+               "$ref":"#/definitions/Pageable"
+            },
+            "size":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "sort":{
+               "$ref":"#/definitions/Sort"
+            },
+            "totalElements":{
+               "type":"integer",
+               "format":"int64"
+            },
+            "totalPages":{
+               "type":"integer",
+               "format":"int32"
+            }
+         },
+         "title":"PageOfGetIdentityIdsResponse"
+      },
+      "PageOfMessageDto":{
+         "type":"object",
+         "properties":{
+            "content":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/MessageDto"
+               }
+            },
+            "first":{
+               "type":"boolean"
+            },
+            "last":{
+               "type":"boolean"
+            },
+            "number":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "numberOfElements":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "pageable":{
+               "$ref":"#/definitions/Pageable"
+            },
+            "size":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "sort":{
+               "$ref":"#/definitions/Sort"
+            },
+            "totalElements":{
+               "type":"integer",
+               "format":"int64"
+            },
+            "totalPages":{
+               "type":"integer",
+               "format":"int32"
+            }
+         },
+         "title":"PageOfMessageDto"
+      },
+      "Pageable":{
+         "type":"object",
+         "properties":{
+            "offset":{
+               "type":"integer",
+               "format":"int64"
+            },
+            "pageNumber":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "pageSize":{
+               "type":"integer",
+               "format":"int32"
+            },
+            "paged":{
+               "type":"boolean"
+            },
+            "sort":{
+               "$ref":"#/definitions/Sort"
+            },
+            "unpaged":{
+               "type":"boolean"
+            }
+         },
+         "title":"Pageable"
+      },
+      "PendingComment":{
+         "type":"object",
+         "properties":{
+            "comment":{
+               "type":"string"
+            },
+            "createdAt":{
+               "type":"string",
+               "format":"date-time"
+            },
+            "createdBy":{
+               "type":"string"
+            }
+         },
+         "title":"PendingComment"
+      },
+      "PreferencesContactDto":{
+         "type":"object",
+         "required":[
+            "language"
+         ],
+         "properties":{
+            "language":{
+               "type":"string",
+               "enum":[
+                  "EN",
+                  "DE",
+                  "FR",
+                  "LU"
+               ]
+            },
+            "preference1":{
+               "type":"string",
+               "enum":[
+                  "ADDRESS",
+                  "EMAIL",
+                  "MOBILE",
+                  "PHONE",
+                  "FAX",
+                  "OTHER",
+                  "WEBSITE"
+               ]
+            },
+            "preference2":{
+               "type":"string",
+               "enum":[
+                  "ADDRESS",
+                  "EMAIL",
+                  "MOBILE",
+                  "PHONE",
+                  "FAX",
+                  "OTHER",
+                  "WEBSITE"
+               ]
+            },
+            "speakingLanguages":{
+               "type":"array",
+               "items":{
+                  "type":"string",
+                  "enum":[
+                     "EN",
+                     "FR",
+                     "LU",
+                     "DE",
+                     "PT",
+                     "ES",
+                     "GR",
+                     "NL",
+                     "IT",
+                     "RU",
+                     "AR",
+                     "JP",
+                     "NO",
+                     "SE",
+                     "PL",
+                     "FI",
+                     "DK",
+                     "RO",
+                     "CN"
+                  ]
+               }
+            }
+         },
+         "title":"PreferencesContactDto"
+      },
+      "RelatedPartyRoleDto":{
+         "type":"object",
+         "required":[
+            "role"
+         ],
+         "properties":{
+            "accountHolderType":{
+               "type":"string",
+               "enum":[
+                  "NONE_ACCOUNT_HOLDER_TYPE",
+                  "BARE_OWNER_ACCOUNT_HOLDER_TYPE",
+                  "USUFRUCT_ACCOUNT_HOLDER_TYPE"
+               ]
+            },
+            "controlUBO":{
+               "type":"boolean"
+            },
+            "endDate":{
+               "type":"string",
+               "format":"date"
+            },
+            "extraFields":{
+               "type":"object",
+               "additionalProperties":{
+                  "type":"object"
+               }
+            },
+            "isControlUBO":{
+               "type":"boolean"
+            },
+            "percentageOfOwnership":{
+               "type":"number",
+               "format":"double"
+            },
+            "role":{
+               "type":"string"
+            },
+            "startDate":{
+               "type":"string",
+               "format":"date"
+            },
+            "uboType":{
+               "type":"string",
+               "enum":[
+                  "UNKNOWN_UBO_TYPE",
+                  "OWNERSHIP_UBO_TYPE",
+                  "CONTROL_BY_VOTING_RIGHTS_UBO_TYPE",
+                  "CONTROL_UBO_TYPE"
+               ]
+            }
+         },
+         "title":"RelatedPartyRoleDto"
+      },
+      "SaveContractContactRequest":{
+         "type":"object",
+         "required":[
+            "preferences"
+         ],
+         "properties":{
+            "addresses":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AddressContactCreationDto"
+               }
+            },
+            "preferences":{
+               "$ref":"#/definitions/PreferencesContactDto"
+            }
+         },
+         "title":"SaveContractContactRequest"
+      },
+      "Sort":{
+         "type":"object",
+         "properties":{
+            "sorted":{
+               "type":"boolean"
+            },
+            "unsorted":{
+               "type":"boolean"
+            }
+         },
+         "title":"Sort"
+      },
+      "StaticDataDto":{
+         "type":"object",
+         "properties":{
+            "fields":{
+               "type":"array",
+               "description":"The nested fields (static data of type BLOCK only)",
+               "items":{
+                  "$ref":"#/definitions/StaticDataDto"
+               }
+            },
+            "id":{
+               "type":"string",
+               "description":"The OID of the static data"
+            },
+            "name":{
+               "type":"string",
+               "description":"The name of the metadata (not for direct use)"
+            },
+            "source":{
+               "type":"string",
+               "description":"Where the date comes from",
+               "enum":[
+                  "CLIENT",
+                  "IHUB"
+               ]
+            },
+            "subSource":{
+               "type":"string",
+               "description":"Who entity made the data update"
+            },
+            "type":{
+               "type":"string",
+               "description":"The static data type"
+            },
+            "updatedAt":{
+               "type":"string",
+               "format":"date-time",
+               "description":"When it was updated for the last time"
+            },
+            "uuid":{
+               "type":"string",
+               "format":"uuid",
+               "description":"The uuid of the metadata (static data of type BLOCK only)"
+            },
+            "value":{
+               "type":"object",
+               "description":"The value of the static data (the field type depends on the static data type, not for type BLOCK)"
+            }
+         },
+         "title":"StaticDataDto"
+      },
+      "StaticDataInputDto":{
+         "type":"object",
+         "properties":{
+            "id":{
+               "type":"string",
+               "description":"The OID of the static data"
+            },
+            "value":{
+               "type":"object",
+               "description":"Value for the static data, the value type depends on the static data type:\n- for STRING: a primitive string\n- for BOOLEAN: a primitive boolean\n- for NUMBER: a primitive double\n- for DATE: an ISO 8601 date (YYYY-MM-DD)\n- for LIST: an OID in the form of a string\n- for BLOCK: an array with nested objects of type 'StaticDataInputDto' for each nested block field"
+            }
+         },
+         "title":"StaticDataInputDto"
+      },
+      "DataListItemDto":{
+         "type":"object",
+         "properties":{
+            "id":{
+               "type":"string",
+               "description":"The OID of the static data"
+            },
+            "value":{
+               "type":"object",
+               "description":"Value for the static data, the value type depends on the static data type:\n- for STRING: a primitive string\n- for BOOLEAN: a primitive boolean\n- for NUMBER: a primitive double\n- for DATE: an ISO 8601 date (YYYY-MM-DD)\n- for LIST: an OID in the form of a string\n- for BLOCK: an array with nested objects of type 'StaticDataInputDto' for each nested block field"
+            }
+         },
+         "title":"DataListItemDto"
+      },
+      "UpdateContractContactRequest":{
+         "type":"object",
+         "required":[
+            "preferences"
+         ],
+         "properties":{
+            "addresses":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AddressContactUpdateDto"
+               }
+            },
+            "preferences":{
+               "$ref":"#/definitions/PreferencesContactDto"
+            }
+         },
+         "title":"UpdateContractContactRequest"
+      },
+      "UpdateIdentityRiskRequest":{
+         "type":"object",
+         "required":[
+            "reason",
+            "severity"
+         ],
+         "properties":{
+            "reason":{
+               "type":"string"
+            },
+            "severity":{
+               "type":"string"
+            }
+         },
+         "title":"UpdateIdentityRiskRequest"
+      },
+      "UpdateIdentityStaticDataRequest":{
+         "type":"object",
+         "required":[
+            "staticData"
+         ],
+         "properties":{
+            "staticData":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/StaticDataInputDto"
+               }
+            }
+         },
+         "title":"UpdateIdentityStaticDataRequest"
+      },
+      "ValidationDto":{
+         "type":"object",
+         "properties":{
+            "comparedValue":{
+               "type":"object",
+               "description":"Value to which the source should be compared"
+            },
+            "operator":{
+               "description":"Comparison operator to apply",
+               "$ref":"#/definitions/Operator"
+            },
+            "reference":{
+               "type":"object",
+               "description":"Reference to the source for comparison. Can be the keyword 'this', a field OID or an aggregation function"
+            },
+            "valid":{
+               "type":"boolean",
+               "description":"Current status of validation"
+            }
+         },
+         "title":"ValidationDto"
+      },
+      "ValidationError":{
+         "type":"object",
+         "properties":{
+            "code":{
+               "type":"string"
+            },
+            "message":{
+               "type":"string"
+            },
+            "params":{
+               "type":"object"
+            }
+         },
+         "title":"ValidationError"
+      }
+   }
+}
+eld"
             },
             {
                "type":"object",
